@@ -10,6 +10,7 @@ import RegisterPage from './Pages/RegisterPage.jsx'
 import Test from './Pages/Test.jsx'
 import EmailVerification from './Pages/EmailVerification.jsx'
 import PhoneVerification from './Pages/PhoneVerification.jsx'
+import PageNotFound from './Components/PageNotFound.jsx'
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
         path: '/test',
         element: <Test />,
       },
+      {
+        path: '*',
+        element: <PageNotFound />,
+      }
     ]
   }
 ])
