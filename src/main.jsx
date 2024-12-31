@@ -7,7 +7,6 @@ import LandingPage from './Pages/LandingPage.jsx'
 import LoginPage from './Pages/LoginPage.jsx'
 import App from './App.jsx'
 import RegisterPage from './Pages/RegisterPage.jsx'
-import Test from './Pages/Test.jsx'
 import EmailVerification from './Pages/EmailVerification.jsx'
 import PhoneVerification from './Pages/PhoneVerification.jsx'
 import PageNotFound from './Components/PageNotFound.jsx'
@@ -36,10 +35,6 @@ const router = createBrowserRouter([
       {
         path: '/phone-verification',
         element: <PhoneVerification />,
-      },
-      {
-        path: '/test',
-        element: <Test />,
       },
       {
         path: '*',
